@@ -1,33 +1,45 @@
-#IMPORT LIBRARIES
-from telegram.ext import Updater, CommandHandler
-import requests
-import re
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
 
-#CUTE RANDOM DOGS PART STARTS HERE------------
+import random
 
-#function to get the URL.
-def get_url():
-    #using the requests library, we can acces the API and get json data
-    contents = requests.get('https://random.dog/woof.json').json()
-    #get the image url since we need that parameter to be able to send the image
-    url = contents['url']
-    return url
+"""
+ random.choice(r)
+'chao'
+ random.choice(r)
+'hola' """
 
-def perritos(bot, update):
-    #get the url image
-    url = get_url()
-    #get recipient's ID
-    chat_id = update.message.chat_id
-    #send message (image)
-    bot.send_photo(chat_id = chat_id, photo = url)
+#------------START PART STARTS HERE
+def start(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text(f'Hola {update.effective_user.first_name}, escribe "/" para ver los comandos disponibles')
 
-def dogs_main():
-    updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
-    dp = updater.dispatcher
-    dp.add_handler(CommandHandler('perritos', bop))
-    updater.start_polling()
-    updater.idle()
 
-if __name__ == '__dogs_main__':
-    dogs_main()
-#------------CUTE RANDOM DOGS PART ENDS HERE
+updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
+
+updater.dispatcher.add_handler(CommandHandler('start', start))
+
+updater.start_polling()
+updater.idle()
+#------------START PART ENDS HERE
+
+
+#------------COCINA PART STARTS HERE
+def cocina(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text(f'{random.choice([])}')
+
+
+updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
+
+updater.dispatcher.add_handler(CommandHandler('cocina', cocina))
+
+updater.start_polling()
+updater.idle()
+#------------COCINA PART ENDS HERE
+
+
+
+
+"""def get_url():
+    contents = requests.get('https://random.dog/woof.json').json()    
+ 
+#------------CUTE RANDOM DOGS PART ENDS HERE"""
