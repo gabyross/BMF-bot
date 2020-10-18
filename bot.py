@@ -3,13 +3,6 @@ from telegram.ext import Updater, CommandHandler
 import requests
 import re
 
-import telepot
-token = '1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc'
-TelegramBot = telepot.Bot(token)
-print(TelegramBot.getMe())
-
-print(TelegramBot.getUpdates())
-
 #CUTE RANDOM DOGS PART STARTS HERE------------
 
 #function to get the URL.
@@ -20,7 +13,7 @@ def get_url():
     url = contents['url']
     return url
 
-def send__dog_image(bot, update):
+def perritos(bot, update):
     #get the url image
     url = get_url()
     #get recipient's ID
@@ -31,7 +24,7 @@ def send__dog_image(bot, update):
 def dogs_main():
     updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler('send__dog_image', bop))
+    dp.add_handler(CommandHandler('perritos', bop))
     updater.start_polling()
     updater.idle()
 
