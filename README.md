@@ -12,7 +12,7 @@ Comandos:
 
 
 Descripciones:  
-@BestMomForeverbot.
+@BestMomForeverbot.  
 •	cocina  
 1.	Nada como tus arepas por la mañana.  
 2.	Tus platos cuando me sentía mal me curaban el alma.  
