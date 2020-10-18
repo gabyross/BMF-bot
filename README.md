@@ -7,3 +7,5 @@ Comandos:
 **/iconico** - te diré frases de tus personajes, series, peliculas o artistas favoritos  
 **/frases** - te diré frases que expresan lo que sienten por ti  
 **/curiosidades** - te diré pensamientos o recuerdos de ti que tal vez no sabías que las personas tenían  
+**/perritos** - te enviaré fotos lindas de perritos  
+**/gatitos** - te enviaré fotos lindas de gatitos
