@@ -1,5 +1,6 @@
-file = open("data.in","r+") 
-lines = file.readlines()
+file_texto = open("data.in","r+") 
+lines = file_texto.readlines()
+file_texto.close()
 print(lines)
 
 
@@ -10,3 +11,11 @@ frases = []
 iconico = []
 especialidades = []
 curiosidades = []
+
+
+#Aparte hay qeu leer un dictionario de canciones con links 
+canciones={}
+
+file_canciones = open("diccionario_canciones.txt", "r")
+
+##googlea como hacerlo 
