@@ -25,7 +25,7 @@ updater.idle()
 
 #------------COCINA PART STARTS HERE
 def cocina(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f'{random.choice([])}')
+    update.message.reply_text(f'{random.choice([cocina])}')
 
 
 updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
@@ -37,8 +37,34 @@ updater.idle()
 #------------COCINA PART ENDS HERE
 
 
+#------------MAIN PART STARTS HERE
+def main():
+    file = open("data.in","r+") 
+    lines = file.readlines()
 
+    for i in lines(0,8):
+        cocina[i] = lines
+    del(cocina[0])
 
+    for i in lines(10,17):
+        especialidades[i] = lines
+    del(especialidades[0])
+
+    for i in lines(19,29):
+        iconico[i] = lines
+    del(iconico[0])
+
+    for i in lines(31,43):
+        frases[i] = lines
+    del(frases[0])
+
+    for i in lines(45,53):
+        curiosidades[i] = lines
+    del(curiosidades[0])
+
+updater.start_polling()
+updater.idle()
+#------------MAIN PART ENDS HERE
 """def get_url():
     contents = requests.get('https://random.dog/woof.json').json()    
  
