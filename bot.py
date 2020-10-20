@@ -42,28 +42,49 @@ def main():
     file = open("data.in","r+") 
     lines = file.readlines()
 
-    for i in lines(0,8):
-        cocina[i] = lines
+    #declaracion de las categorias
+    cocina = []
+    frases = []
+    iconico = []
+    especialidades = []
+    curiosidades = []
+
+    for i in lines:
+        if lines[i] == "cocina":
+            while lines[i] != "especialidades":
+                cocina.append(lines[i])
+
+        if lines[i] == "especialidades":
+            while lines[i] != "iconico":
+                especialidades.append(lines[i])
+
+        if lines[i] == "iconico":
+            while lines[i] != "frases":
+                iconico.append(lines[i])
+
+        if lines[i] == "frases":
+            while lines[i] != "curiosidades":
+                frases.append(lines[i])
+
+        if lines[i] == "curiosidades":
+            while lines[i] != lines[-1]:
+                curiosidades.append(lines[i])
+        
+        print(lines)
+
     del(cocina[0])
-
-    for i in lines(10,17):
-        especialidades[i] = lines
     del(especialidades[0])
-
-    for i in lines(19,29):
-        iconico[i] = lines
     del(iconico[0])
-
-    for i in lines(31,43):
-        frases[i] = lines
     del(frases[0])
-
-    for i in lines(45,53):
-        curiosidades[i] = lines
     del(curiosidades[0])
 
+    """canciones={}
+    file_canciones = open("diccionario_canciones.txt", "r")
+    canciones={}
+
+
 updater.start_polling()
-updater.idle()
+updater.idle()"""
 #------------MAIN PART ENDS HERE
 """def get_url():
     contents = requests.get('https://random.dog/woof.json').json()    
