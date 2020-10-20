@@ -1,4 +1,4 @@
-# BMF-bot
+di# BMF-bot
 El bot de cumpleaños en telegram para la mejor mamá
 
 Comandos:  
@@ -66,4 +66,31 @@ Descripciones:
 9.	No decidí ser tu hija, pero si hubiese sido por elección, podría decir que no lo cambiaría.  
 10.	Verte feliz me calma el alma.  
 11.	Nunca olvidaré cuando salí del avión y te vi, sentí que otra vez respiraba.  
+
+Canciones 
+
+[Malibu-Miley Cirus](https://www.youtube.com/watch?v=8j9zMok6two)  
+[Better Love-Hozier](https://youtu.be/Wm4CrOfbHMI)  
+[Vor í Vaglaskógi - Kaleo](https://www.youtube.com/watch?v=Da5qQD_RpEQ)  
+[Song on the Beach-Arcade Fire](https://www.youtube.com/watch?v=bsjJaoxKsm8)  
+[Little Black Submarines](https://www.youtube.com/watch?v=6k8es2BNloE)  
+[House of Gold-Twenty One Pilots](https://www.youtube.com/watch?v=mDyxykpYeu8)  
+[Tear in my hearth-Twenty One Pilots](https://www.youtube.com/watch?v=nky4me4NP70)  
+[Plis plis plis!-La Vida Boheme](https://www.youtube.com/watch?v=ljgsfZHZJqA)  
+[Clasico-Los Colores](https://www.youtube.com/watch?v=ZF8azpYrrCY&list=RDEMfY0uf3FFgYSubn5eguRmCA&index=2)  
+[Fluorescent Adolescetn-Artic Monkys](https://www.youtube.com/watch?v=ma9I9VBKPiw&list=PL3s4G5l5nwI_lYKpq-GrBfF2dstRnBQcn)  
+[Todo En Mi Vida Eres Tú-Juanes](https://www.youtube.com/watch?v=og231VXT8fI)  
+[Beach House-Space Song](https://www.youtube.com/watch?v=f9X1C7pTu-M&list=RDf9X1C7pTu-M&start_radio=1)  
+[Hometown-French 79](https://www.youtube.com/watch?v=yAv5pLO37mE&list=RDf9X1C7pTu-M&index=5)  
+[Between Days - Far Caspian](https://www.youtube.com/watch?v=sl86DDpAkxw)  
+[Oh baby-LCD Sundsystem](https://www.youtube.com/watch?v=5gIhrPGyu6U)  
+[Cough Syrup-Young the Giant](https://www.youtube.com/watch?v=MzT3vcQQNow)  
+[Mardy Bum-Artic Monkeys](https://www.youtube.com/watch?v=dO368WjwyFs)  
+[I'm Yours](https://www.youtube.com/watch?v=8mCCMhuKEYw)  
+[Castle on The Hill-Ed Sheeran](https://www.youtube.com/watch?v=7Qp5vcuMIlk)  
+[Photograph-Ed Sheeran](https://www.youtube.com/watch?v=nSDgHBxUbVQ)  
+[7 Years-Lukas Graham](https://www.youtube.com/watch?v=LHCob76kigA)  
+[Dusk untill Down-Zayn](https://www.youtube.com/watch?v=tt2k8PGm-TI)  
+[The Days-Avicii](https://www.youtube.com/watch?v=JDglMK9sgIQ)  
+[You are so beautiful-Joe Cocker](https://www.youtube.com/watch?v=ZqUyEhk2LtE)  
 
