@@ -93,4 +93,10 @@ Canciones
 [Dusk untill Down-Zayn](https://www.youtube.com/watch?v=tt2k8PGm-TI)  
 [The Days-Avicii](https://www.youtube.com/watch?v=JDglMK9sgIQ)  
 [You are so beautiful-Joe Cocker](https://www.youtube.com/watch?v=ZqUyEhk2LtE)  
-
+[Mind Over Matter-Young the Giant](https://www.youtube.com/watch?v=KWWRGmWKkfI)   
+[Riptide-Vance Joy](https://www.youtube.com/watch?v=uJ_1HMAGb4k)   
+[Good Grief-Bastille](https://www.youtube.com/watch?v=ZWCB3hpJDXM)   
+[Crash my car-Coin](https://www.youtube.com/watch?v=kv1wZPsvtuo)   
+[Electric Love-Borns](https://www.youtube.com/watch?v=VUCuoxOUD6U)   
+[All I Want-Kodaline](https://www.youtube.com/watch?v=n6BwAWiHcSg)   
+[Junk of the Heart-The Kooks](https://www.youtube.com/watch?v=8pvHZ4ddR-4)   
