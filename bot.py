@@ -51,22 +51,20 @@ for line in lines:
     elif line == "curiosidades":
         flag = "curiosidades"
         continue
-    print(flag)
+
     ##ahora dependiendo del flag agregamos las lineas
     if flag == "cocina":
-        list_cocina.append(line)
+        list_cocina.append(line.encode('utf-8').decode())
     elif flag == "especialidades":
-        list_especialidades.append(line)
+        list_especialidades.append(line.encode('utf-8').decode())
     elif flag == "iconico":
-        list_iconico.append(line)
+        list_iconico.append(line.encode('utf-8').decode())
     elif flag == "frases":
-        list_frases.append(line)
+        list_frases.append(line.encode('utf-8').decode())
     elif flag == "curiosidades":
-        list_curiosidades.append(line)
+        list_curiosidades.append(line.encode('utf-8').decode())
 #------------LISTAS PART ENDS HERE
 
-##Primero se ejecuta el main, luego la parte del bot que hace polling, porque sino
-##nunca se cargan las variables que quieres.
 
 ## Inicio del establecimiento de las funciones de los comandos
 #------------START PART STARTS HERE
@@ -119,7 +117,7 @@ def get_url_cat():
 
 #------------CANCIONES PART STARTS HERE
 def canciones(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(random.choice(songs))
+    update.message.reply_text(random.choice(list(songs.values())))
 updater.dispatcher.add_handler(CommandHandler('canciones', canciones))
 #------------CANCIONES PART ENDS HERE
 ## Fin del establecimiento de las funciones de los comandos
