@@ -11,6 +11,7 @@ def listener(bot, update):
 
     print("ID: " + str(id) + " MENSAJE: " + mensaje)
 
+
 #variables globales
 list_cocina = []
 list_frases = []
