@@ -1,7 +1,7 @@
 # Importamos las librerías necesarias
-from telegram import Update
+from telegram import Update, InputMediaPhoto
 from telegram.ext import CallbackContext, Updater, MessageHandler, CommandHandler, InlineQueryHandler, Filters
-import random, ast, json, requests
+import random, ast, json, requests, re
 
 
 # Establecemos el token
@@ -109,17 +109,36 @@ updater.dispatcher.add_handler(CommandHandler('curiosidades', curiosidades))
 
 
 #------------PERRITOS PART STARTS HERE
+def get_url_perritos():
+    contents = requests.get('https://random.dog/woof.json').json()    
+    url = contents['url']
+    return url
+
+def get_image_url():
+    allowed_extension = ['jpg','jpeg','png']
+    file_extension = ''
+    while file_extension not in allowed_extension:
+        url = get_url_perritos()
+        file_extension = re.search("([^.]*)$",url).group(1).lower()
+    return url
+
+
 def perritos(update: Update, context: CallbackContext) -> None:
-    content = requests.get('https://random.dog/woof.json').json() 
-    update.message.reply_text(content)
+    url_perrito = get_image_url()
+    context.bot.send_photo(chat_id=update.effective_chat.id, photo=url_perrito, caption="Perritos para alegrar tu dia!")
 updater.dispatcher.add_handler(CommandHandler('perritos', perritos))
 #------------PERRITOS PART ENDS HERE
 
 
 #------------GATITOS PART STARTS HERE
+def get_url_gatitos():
+    contents = requests.get('https://api.thecatapi.com/v1/images/search').json()    
+    url = contents[0]['url']
+    return url
+
 def gatitos(update: Update, context: CallbackContext) -> None:
-    contents = requests.get('http://placekitten.com/200/200').json()  #AGREGAR LINK QUE FUNCIONE
-    update.message.reply_text(contents)
+    url_gatito = get_url_gatitos()
+    context.bot.send_photo(chat_id=update.effective_chat.id, photo=url_gatito, caption="Gatitos cuchis para alegrar tu dia!")
 updater.dispatcher.add_handler(CommandHandler('gatitos', gatitos))
 #------------GATITOS PART ENDS HERE
 
