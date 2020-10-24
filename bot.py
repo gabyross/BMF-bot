@@ -1,7 +1,7 @@
 # Importamos las librerías necesarias
 from telegram import Update
 from telegram.ext import CallbackContext, Updater, MessageHandler, CommandHandler, InlineQueryHandler, Filters
-import random, ast
+import random, ast, json, requests
 
 
 # Establecemos el token
@@ -24,7 +24,6 @@ def cargar_dictionario(file_name):
 
 
 #------------LISTAS PART STARTS HERE
-
 file = open("data.in","r+") 
 lines = file.read().splitlines()
 
@@ -109,11 +108,20 @@ updater.dispatcher.add_handler(CommandHandler('curiosidades', curiosidades))
 #------------CURIOSIDADES PART ENDS HERE
 
 
-'''def get_url_dog():
-    contents = requests.get('https://random.dog/woof.json').json()  
+#------------PERRITOS PART STARTS HERE
+def perritos(update: Update, context: CallbackContext) -> None:
+    content = requests.get('https://random.dog/woof.json').json() 
+    update.message.reply_text(content)
+updater.dispatcher.add_handler(CommandHandler('perritos', perritos))
+#------------PERRITOS PART ENDS HERE
 
-def get_url_cat():
-    contents = requests.get('').json()'''
+
+#------------GATITOS PART STARTS HERE
+def gatitos(update: Update, context: CallbackContext) -> None:
+    contents = requests.get('http://placekitten.com/200/200').json()  #AGREGAR LINK QUE FUNCIONE
+    update.message.reply_text(contents)
+updater.dispatcher.add_handler(CommandHandler('gatitos', gatitos))
+#------------GATITOS PART ENDS HERE
 
 #------------CANCIONES PART STARTS HERE
 def canciones(update: Update, context: CallbackContext) -> None:
