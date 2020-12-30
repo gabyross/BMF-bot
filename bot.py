@@ -5,7 +5,7 @@ import random, ast, json, requests, re
 
 
 # Establecemos el token
-updater = Updater('1243199877:AAE11yhQrE0CGjhY7AmjW_ikWQxr9a67ZBc')
+updater = Updater('tuToken')
 
 #variables globales
 list_cocina = []
